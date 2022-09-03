@@ -38,7 +38,7 @@ private slots:
     void button_equal_clicked();
     void button_clearAll_clicked();
     void hello_world();
-    void edit_changed();
+    void edit_change();
 
 private:
     Ui::Dialog *ui;

@@ -15,7 +15,7 @@ public:
 public:
     int index;
 signals:
-    void changeNum();
+    void flushEdit();
 private slots:
     void clickButton();
 

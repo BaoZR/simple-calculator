@@ -36,7 +36,7 @@ Dialog::Dialog(QWidget *parent)
     }
 
     for(int i = 0; i < 10 ; i++){
-        connect(button_num[i],SIGNAL(changeNum()),this,SLOT(edit_changed()));
+        connect(button_num[i],SIGNAL(flushEdit()),this,SLOT(edit_change()));
     }
 
     connect(button_plus,SIGNAL(clicked()),this,SLOT(button_plus_clicked()));
@@ -117,7 +117,7 @@ void Dialog::hello_world()
     lineEdit->setText(QString("hello"));
 };
 
-void Dialog::edit_changed()
+void Dialog::edit_change()
 {
     lineEdit->setText(S);
 }

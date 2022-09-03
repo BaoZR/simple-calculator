@@ -6,7 +6,7 @@ ButtonNum::ButtonNum(int i):QPushButton(QString::number(i)),index(i){};
 void ButtonNum::clickButton()
 {
     Dialog::S += QString::number(index);
-    emit changeNum();
+    emit flushEdit();
 
     if(Dialog::mark == 1){
         Dialog::num1 = Dialog::num1 * 10 + index;
